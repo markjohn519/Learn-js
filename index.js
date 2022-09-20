@@ -8,8 +8,8 @@ const myBoolean = true;               // a boolean
 //advance types
 const myArray1 = [];                    // an array
 const myObject = {};                  // an object
-//undefined
-const newVariable;
+// //undefined
+// const newVariable;
 console.log(newVariable); //prints undefined
 //null
 const emptyVariable = null;
@@ -497,21 +497,21 @@ const person = {
 };
 // If we want to get head, the old way:
 let head = person.head;
-// ES6 Destructuring
-let { head } = person;
+// // ES6 Destructuring
+// let { head } = person;
 // We can give other name as if a variable was declared, in the same line
 let { head : myHead } = person;
 // So we can do...
-console.log(myHead);            // prints '{ eyes, mouth: { ... } }'
-With arrays:
-let numbers = ['2', '3', '7'];
-// Old way
-let two = numbers[0];
-let three = numbers[1];
-// ES6 Destructuring
-let [two, three] = numbers;
-// We can give them other names too
-let [two: positionZero, three: positionOne] = numbers;
+// console.log(myHead);            // prints '{ eyes, mouth: { ... } }'
+// With arrays:
+// let numbers = ['2', '3', '7'];
+// // Old way
+// let two = numbers[0];
+// let three = numbers[1];
+// // ES6 Destructuring
+// let [two, three] = numbers;
+// // We can give them other names too
+// let [two: positionZero, three: positionOne] = numbers;
 console.log(positionZero)       // prints '2'
 console.log(positionOne)        // prints '3'
 // We can do this with function parameters too:
