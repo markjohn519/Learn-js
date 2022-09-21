@@ -1,21 +1,14 @@
-var Person = function() {};
-
-Person.prototype.initialize = function(name, age)
-{
+function Person(name, age) {
     this.name = name;
     this.age = age;
+};
+
+function Teacher(subject) {
+    this.subject = subject;
 }
 
-// TODO: create the class Teacher and a method teach
-var Teacher = function() {};
 Teacher.prototype = new Person();
 
-Teacher.prototype.teach = function(subject)
-{
-    console.log(this.name + " is now teaching " + subject);
-}
+var him = new Teacher("Adam", 45,"Inheritance")
 
-var him = new Teacher();
-
-him.initialize("Adam", 45);
-him.teach("Inheritance");
+console.log(him)
