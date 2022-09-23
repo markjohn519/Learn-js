@@ -1,3 +1,5 @@
+console.log("This is Renee");
+
 const arr = [1,2,4,0];
 
 const inlclude = arr.includes(0)
